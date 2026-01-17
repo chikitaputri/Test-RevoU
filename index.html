@@ -1,12 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test RevoU</title>
+    <title>Portfolio Nasi Kuning Luwuk Dince</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    <h1>Hello World!</h1>
-    <h2>Saya Putri</h2>
+
+    <!-- Header Content -->
+    <header class="main-header p-[8px]">
+        <!-- Logo -->
+        <div class="logo"></div>
+
+        <!-- Navigation Menu -->
+        <nav class="flex">
+            <a class="px-4 p-2 rounded-full hover:bg-yellow-100 transition" href="#home-page">Home</a>
+            <a class="px-4 p-2 rounded-full hover:bg-yellow-100 transition" href="#portfolio-page">Portfolio</a>
+            <a class="px-4 p-2 rounded-full hover:bg-yellow-100 transition" href="#our-profile-page">Our Profile</a>
+            <a class="px-4 py-2 rounded-full bg-orange-400 hover:bg-orange-500 transition" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+    <hr />
+
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="relative min-h-[610px] flex flex-col items-center justify-center text-center px-4 overflow-hidden">
+
+            <div class="absolute inset-0 -z-10">
+                <img src="css/nasikuning.png" alt="Background" class="w-full h-full object-cover brightness-50">
+            </div>
+
+            <div class="max-w-3xl">
+            <h2 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg mb-4" id="welcome-speech">
+                Welcome to Our Website <span class="text-yellow-400">Nasi Kuning</span> Luwuk Dince
+            </h2>
+            <p class="text-lg md:text-xl text-gray-200 mb-8 drop-shadow-md">Kami sangat senang atas kunjungan Anda. Silakan jelajahi berbagai pilihan menu dan layanan terbaik kami.</p>
+
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- Portfolio Page -->
+        <section id="portfolio-page" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16">
+                    <h2 class="text-3xl md:text-5xl font-bold text-gray-800">Menu & Layanan Kami</h2>
+                    <div class="w-24 h-1.5 bg-yellow-500 mx-auto mt-4 rounded-full"></div>
+                    <p class="mt-6 text-gray-600 max-w-2xl mx-auto text-lg">
+                        Dari sarapan khas hingga kebutuhan makan harian, kami menyajikan kelezatan langsung ke meja Anda.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="css/NasiKuning-Daging.png" alt="Nasi Kuning Daging" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute bottom-4 left-4 bg-yellow-400 text-black font-bold px-4 py-1 rounded-lg shadow-md">Terlaris</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-bold text-2xl text-gray-800">Nasi Kuning Daging</h3>
+                            <p class="text-gray-500 mt-3">Paduan nasi kuning gurih dengan daging bumbu rempah yang empuk dan meresap.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+                        <div class="h-64 overflow-hidden">
+                            <img src="css/NasiKuningIkan.png" alt="Nasi Kuning Ikan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-bold text-2xl text-gray-800">Nasi Kuning Ikan</h3>
+                            <p class="text-gray-500 mt-3">Sajian klasik dengan ikan masak bumbu khas yang memberikan cita rasa segar dan gurih.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="css/tinutuan.png" alt="Tinutuan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute top-4 right-4 bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full">Menu Sehat</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-bold text-2xl text-gray-800">Tinutuan</h3>
+                            <p class="text-gray-500 mt-3">Bubur khas yang kaya akan sayuran segar, disajikan hangat dengan pelengkap yang nikmat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border-2 border-orange-100">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="css/rantangan.png" alt="Rantangan" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                            <div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                            <div class="absolute bottom-4 left-4 text-white font-bold">Layanan Langganan</div>
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-bold text-2xl text-orange-600">Rantangan Harian</h3>
+                            <p class="text-gray-500 mt-3">Menu rumahan berganti setiap hari. Solusi makan siang & malam tanpa repot untuk keluarga.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group border-2 border-yellow-100">
+                        <div class="h-64 overflow-hidden relative">
+                            <img src="css/makandos.png" alt="Nasi Dos" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
+                        </div>
+                        <div class="p-8">
+                            <h3 class="font-bold text-2xl text-yellow-600">Nasi Dos (Kotak)</h3>
+                            <p class="text-gray-500 mt-3">Menerima pesanan dalam jumlah besar untuk acara kantor, syukuran, dan berbagai momen spesial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+        </div>
+    </div>
+</section>
+
+        <hr />
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="py-20 bg-white">
+            <div class="container mx-auto px-8 flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2">
+                    <img src="css/Tempat.jpg" alt="Dapur Kami" class="rounded-2xl shadow-lg w-full h-[400px] object-cover">
+                </div>
+                
+                <div class="w-full md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Tentang Nasi Kuning Luwuk Dince</h2>
+                    <p class="text-gray-600 mb-4 leading-relaxed">
+                        Berawal dari dapur rumahan di kota Luwuk, <span class="font-bold text-gray-800">Nasi Kuning Luwuk Dince</span> hadir membawa cita rasa autentik resep turun-temurun. Kami percaya bahwa makanan yang baik bermula dari bahan-bahan yang segar dan cinta dalam setiap olahannya.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Kini, kami melayani lebih dari sekadar sarapan. Dengan layanan <span class="font-bold text-gray-800">Rantangan Harian</span> dan <span class="font-bold text-gray-800">Nasi Dos</span>, kami berkomitmen menjadi mitra kuliner terpercaya bagi keluarga dan perkantoran di seluruh wilayah Luwuk.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 border-t pt-6">
+                        <div>
+                            <span class="block text-2xl font-bold text-yellow-500">200+</span>
+                            <span class="text-sm text-gray-500">Porsi Terjual Setiap Hari</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl font-bold text-yellow-500">5+</span>
+                            <span class="text-sm text-gray-500">Varian Menu Utama</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr />
+
+        <!-- Message Us Page -->
+        <section id="message-us-page" class="min-h-[500px] mx-8 py-12">
+            <header class="mb-8">
+                <h2 class="text-3xl font-bold">Hubungi Kami</h2>
+                <p class="mt-2 text-gray-600">Lengkapi data untuk informasi katering dan rantangan.</p>
+            </header>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                
+                <div class="w-full md:w-1/2">
+                    <form id="contactForm">
+                        <div class="mb-4">
+                            <label class="block mb-2 font-bold" for="name">Nama:</label>
+                            <input class="w-full p-2 border rounded focus:ring-2 focus:ring-yellow-500" type="text" id="name" required />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2 font-bold" for="email">Email:</label>
+                            <input class="w-full p-2 border rounded focus:ring-2 focus:ring-yellow-500" type="email" id="email" required />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2 font-bold" for="phone">No Telepon:</label>
+                            <input class="w-full p-2 border rounded focus:ring-2 focus:ring-yellow-500" type="tel" id="phone" required />
+                        </div>
+                        <div class="mb-4">
+                            <label class="block mb-2 font-bold" for="message">Pesan:</label>
+                            <textarea class="w-full p-2 border rounded focus:ring-2 focus:ring-yellow-500" id="message" rows="4" required></textarea>
+                        </div>
+                        <button class="px-6 py-2 bg-yellow-500 text-black font-bold rounded hover:bg-yellow-600 transition w-full" type="submit">Kirim Pesan</button>
+                    </form>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div id="resultOutput" class="p-6 bg-gray-50 border-2 border-dashed border-gray-300 rounded-2xl h-full hidden">
+                        <h3 class="font-bold text-xl text-green-600 mb-4">Data Berhasil dikirim</h3>
+                        <div id="displayValues" class="space-y-3 text-gray-700">
+
+                        </div>
+                    </div>
+                    <div id="placeholderText" class="flex items-center justify-center h-full border-2 border-dashed border-gray-200 rounded-2xl text-gray-400 p-8 text-center">
+                        Hasil pengiriman pesan akan muncul di sini setelah dikirim.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <p class="text-center p-4 bg-gray-200">© 2019 Nasi Kuning Luwuk Dince . All rights reserved.</p>
+    </footer>
+
+    <!-- Javascript External -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
